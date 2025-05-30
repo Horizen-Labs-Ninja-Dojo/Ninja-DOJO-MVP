@@ -1,35 +1,6 @@
 import { Sword, Users, Bot, Gamepad2, Play } from 'lucide-react';
 
-const features = [
-  {
-    icon: Gamepad2,
-    title: 'Immersive Gameplay',
-    description: 'PvE & PvP missions, faction wars, stealth mechanics, and skill trees in stunning 3D environments',
-    color: 'from-cyan-400 to-blue-500',
-    image: "/public/image/game/Immersive_Gameplay.png"
-  },
-  {
-    icon: Sword,
-    title: 'Combat System',
-    description: 'Master ancient ninja techniques with modern blockchain-powered weapon upgrades',
-    color: 'from-purple-400 to-pink-500',
-    image: "/public/image/game/Combat_System.png"
-  },
-  {
-    icon: Bot,
-    title: 'AI-Enhanced NPCs',
-    description: 'Adaptive enemies and allies powered by machine learning that respond to your playstyle',
-    color: 'from-green-400 to-teal-500',
-    image: "/public/image/game/AI_Enhanced_NPCs.png"
-  },
-  {
-    icon: Users,
-    title: 'Clan Warfare',
-    description: 'Form alliances, build territories, and engage in epic faction battles',
-    color: 'from-indigo-400 to-purple-500',
-    image: "/public/image/game/Clan_Warfare.png"
-  }
-];
+
 
 export const Game = () => {
   return (

@@ -66,7 +66,7 @@ export const About = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Shield className="h-6 w-6 text-cyan-400" />
-                  <span className="text-gray-300"></span>
+                  <span className="text-gray-300">Blockchain-powered ownership</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Zap className="h-6 w-6 text-purple-400" />
