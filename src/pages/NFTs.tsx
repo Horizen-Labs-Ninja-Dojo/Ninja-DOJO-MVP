@@ -1,62 +1,6 @@
 import React from 'react';
 import { Star, TrendingUp, Shield, Zap, Filter, Search } from 'lucide-react';
 
-const nftItems = [
-  {
-    id: 1,
-    name: 'Shadow Blade Katana',
-    rarity: 'Legendary',
-    price: '2.5 ETH',
-    image: '/public/image/nfts/Shadow_Blade_Katana.png',
-    stats: { attack: 95, speed: 88, stealth: 92 },
-    rarityColor: 'from-yellow-400 to-orange-500'
-  },
-  {
-    id: 2,
-    name: 'Cyber Ninja Armor',
-    rarity: 'Epic',
-    price: '1.8 ETH',
-    image: '/public/image/nfts/Cyber_Ninja_Armor_image.png',
-    stats: { defense: 90, agility: 75, tech: 85 },
-    rarityColor: 'from-purple-400 to-pink-500'
-  },
-  {
-    id: 3,
-    name: 'Mystic Throwing Stars',
-    rarity: 'Rare',
-    price: '0.9 ETH',
-    image: '/public/image/nfts/Mystic_Throwing_Stars.png',
-    stats: { accuracy: 93, damage: 78, range: 88 },
-    rarityColor: 'from-blue-400 to-cyan-500'
-  },
-  {
-    id: 4,
-    name: 'Dragon Scale Mask',
-    rarity: 'Epic',
-    price: '1.2 ETH',
-    image: '/public/image/nfts/Dragon_scale_mask.png',
-    stats: { stealth: 88, vision: 92, intimidation: 85 },
-    rarityColor: 'from-purple-400 to-pink-500'
-  },
-  {
-    id: 5,
-    name: 'Lightning Gauntlets',
-    rarity: 'Rare',
-    price: '0.7 ETH',
-    image: '/public/image/nfts/Lightning_Gauntlets.png',
-    stats: { speed: 90, electric: 85, grip: 88 },
-    rarityColor: 'from-blue-400 to-cyan-500'
-  },
-  {
-    id: 6,
-    name: 'Phantom Cloak',
-    rarity: 'Legendary',
-    price: '3.1 ETH',
-    image: '/public/image/nfts/Phantom_Cloak.png',
-    stats: { stealth: 98, mobility: 90, defense: 85 },
-    rarityColor: 'from-yellow-400 to-orange-500'
-  }
-];
 
 export const NFTs = () => {
   return (
