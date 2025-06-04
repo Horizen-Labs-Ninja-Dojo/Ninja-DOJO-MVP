@@ -1,3 +1,4 @@
+//Admin File
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 const adminFileSchema = new mongoose.Schema({
