@@ -82,45 +82,45 @@ exports.getUserDetails = asyncErrorHandler(async (req, res, next) => {
 });
 
 // Forgot Password
-exports.forgotPassword = asyncErrorHandler(async (req, res, next) => {
-    const user = await User.findOne({ email: req.body.email });
+// exports.forgotPassword = asyncErrorHandler(async (req, res, next) => {
+//     const user = await User.findOne({ email: req.body.email });
 
-    if (!user) {
-        return next(new ErrorHandler("User Not Found", 404));
-    }
+//     if (!user) {
+//         return next(new ErrorHandler("User Not Found", 404));
+//     }
 
-    const resetToken = await user.getResetPasswordToken();
+//     const resetToken = await user.getResetPasswordToken();
 
-    await user.save({ validateBeforeSave: false });
+//     await user.save({ validateBeforeSave: false });
 
-    // const resetPasswordUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
-    const resetPasswordUrl = `https://${req.get(
-        "host"
-    )}/password/reset/${resetToken}`;
+//     // const resetPasswordUrl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
+//     const resetPasswordUrl = `https://${req.get(
+//         "host"
+//     )}/password/reset/${resetToken}`;
 
-    // const message = `Your password reset token is : \n\n ${resetPasswordUrl}`;
+//     // const message = `Your password reset token is : \n\n ${resetPasswordUrl}`;
 
-    try {
-        await sendEmail({
-            email: user.email,
-            templateId: process.env.SENDGRID_RESET_TEMPLATEID,
-            data: {
-                reset_url: resetPasswordUrl,
-            },
-        });
+//     try {
+//         await sendEmail({
+//             email: user.email,
+//             templateId: process.env.SENDGRID_RESET_TEMPLATEID,
+//             data: {
+//                 reset_url: resetPasswordUrl,
+//             },
+//         });
 
-        res.status(200).json({
-            success: true,
-            message: `Email sent to ${user.email} successfully`,
-        });
-    } catch (error) {
-        user.resetPasswordToken = undefined;
-        user.resetPasswordExpire = undefined;
+//         res.status(200).json({
+//             success: true,
+//             message: `Email sent to ${user.email} successfully`,
+//         });
+//     } catch (error) {
+//         user.resetPasswordToken = undefined;
+//         user.resetPasswordExpire = undefined;
 
-        await user.save({ validateBeforeSave: false });
-        return next(new ErrorHandler(error.message, 500));
-    }
-});
+//         await user.save({ validateBeforeSave: false });
+//         return next(new ErrorHandler(error.message, 500));
+//     }
+// });
 
 // Reset Password
 exports.resetPassword = asyncErrorHandler(async (req, res, next) => {
