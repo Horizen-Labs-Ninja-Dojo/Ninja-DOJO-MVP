@@ -15,7 +15,12 @@ export const Header = () => {
             </span>
           </div>
 
-
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#game" className="text-gray-300 hover:text-cyan-400 transition-colors">Game</a>
+            <a href="#nfts" className="text-gray-300 hover:text-cyan-400 transition-colors">NFTs</a>
+            <a href="#dao" className="text-gray-300 hover:text-cyan-400 transition-colors">DAO</a>
+            <a href="#earn" className="text-gray-300 hover:text-cyan-400 transition-colors">Earn</a>
+          </nav>
 
           <div className="hidden md:flex items-center space-x-4">
             <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 flex items-center space-x-2">
@@ -39,7 +44,10 @@ export const Header = () => {
               <a href="#nfts" className="text-gray-300 hover:text-cyan-400 transition-colors">NFTs</a>
               <a href="#dao" className="text-gray-300 hover:text-cyan-400 transition-colors">DAO</a>
               <a href="#earn" className="text-gray-300 hover:text-cyan-400 transition-colors">Earn</a>
- 
+              <button className="mt-4 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold flex items-center space-x-2">
+                <Wallet className="h-4 w-4" />
+                <span>Connect Wallet</span>
+              </button>
             </nav>
           </div>
         )}
