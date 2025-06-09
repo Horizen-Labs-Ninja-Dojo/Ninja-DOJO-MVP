@@ -4,6 +4,14 @@ Welcome to **Web3 Ninja**, an ambitious game studio project that fuses AAA-level
 
 ---
 
+## 🚀 Product Summary
+
+**Web3 Ninja** is a futuristic ninja-themed metaverse game redefining interactive entertainment for the decentralized world. Master stealth, strategy, and swordplay in a universe where assets are owned, earned, and evolved by players. 
+
+From AI-powered NPCs to DAO-governed villages, we’re building an ecosystem where gameplay, economy, and community merge — and you’re invited to join the dojo.
+
+---
+
 ## 💻 Getting Started
 
 ```bash
