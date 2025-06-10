@@ -40,13 +40,6 @@ const earningMethods = [
   }
 ];
 
-const leaderboard = [
-  { rank: 1, name: 'ShadowMaster', earnings: '15,432 NINJA', avatar: '🥷' },
-  { rank: 2, name: 'CyberBlade', earnings: '12,891 NINJA', avatar: '⚔️' },
-  { rank: 3, name: 'StealthNinja', earnings: '11,567 NINJA', avatar: '🗡️' },
-  { rank: 4, name: 'MysticWarrior', earnings: '9,234 NINJA', avatar: '🌟' },
-  { rank: 5, name: 'ThunderStrike', earnings: '8,765 NINJA', avatar: '⚡' }
-];
 
 export const Earn = () => {
   return (
