@@ -26,10 +26,6 @@ npm install
 npm run dev
 ```
 
-Make sure to create a `.env` file with necessary environment variables (`PORT`, `MONGO_URI`, `SENDGRID_API_KEY`, etc.)
-
----
-
 ## 🛠️ Available Scripts
 
 | Command            | Description                                      |
