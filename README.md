@@ -12,6 +12,18 @@ From AI-powered NPCs to DAO-governed villages, we’re building an ecosystem whe
 
 ---
 
+## 🎯 Vision
+
+To create a **legendary ninja metaverse** that is:
+
+- Exhilarating & immersive  
+- Empowering & community-driven  
+- Fully decentralized  
+
+Players will **own, shape, and earn** from the worlds they explore.
+
+---
+
 ## 💻 Getting Started
 
 ```bash
