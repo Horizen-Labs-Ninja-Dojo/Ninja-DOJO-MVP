@@ -57,14 +57,3 @@ npm run dev
 | `npm run lint`     | Lints the codebase using ESLint                  |
 
 ---
-
-## 🌍 Project Structure
-
-```
-/frontend           → React app with Vite & Tailwind
-/backend            → Node.js + Express backend
-/public             → Static assets
-/scripts            → Utilities and scripts
-.env                → Environment variables
-package.json        → Project configuration
-```
