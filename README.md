@@ -24,6 +24,15 @@ Players will **own, shape, and earn** from the worlds they explore.
 
 ---
 
+## 🛡️ Mission
+
+- **Gamify Decentralization:** Build a AAA-level game on blockchain rails  
+- **Empower Ninjas:** NFTs, DAO governance & play-to-earn mechanics  
+- **Fuse Art & Code:** Design + AI-driven gameplay = shadow strike precision  
+- **Bridge Web2 & Web3:** Seamless onboarding for both traditional gamers and crypto natives
+    
+---
+
 ## 💻 Getting Started
 
 ```bash
