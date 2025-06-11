@@ -99,58 +99,7 @@ export const PlayToEarn = () => {
           </div>
 
           {/* Leaderboard */}
-          <div>
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <TrendingUp className="h-8 w-8 text-cyan-400 mr-3" />
-              Top Earners
-            </h3>
-            <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 p-6">
-              <div className="space-y-4">
-                {leaderboard.map((player, index) => (
-                  <div
-                    key={index}
-                    className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 ${
-                      index === 0 ? 'bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-400/30' :
-                      index === 1 ? 'bg-gradient-to-r from-gray-400/20 to-gray-500/20 border border-gray-400/30' :
-                      index === 2 ? 'bg-gradient-to-r from-amber-600/20 to-amber-700/20 border border-amber-600/30' :
-                      'bg-gray-800/30 hover:bg-gray-700/30'
-                    }`}
-                  >
-                    <div className="flex items-center space-x-4">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${
-                        index === 0 ? 'bg-yellow-500 text-black' :
-                        index === 1 ? 'bg-gray-400 text-black' :
-                        index === 2 ? 'bg-amber-600 text-white' :
-                        'bg-gray-600 text-white'
-                      }`}>
-                        {player.rank}
-                      </div>
-                      <div className="text-2xl">{player.avatar}</div>
-                      <div>
-                        <div className="font-bold text-white">{player.name}</div>
-                        <div className="text-sm text-gray-400">This Week</div>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="font-bold text-yellow-400">{player.earnings}</div>
-                      <div className="text-sm text-gray-400 flex items-center">
-                        <TrendingUp className="h-3 w-3 mr-1" />
-                        +12%
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-gray-700">
-                <div className="text-center">
-                  <div className="text-gray-400 mb-2">Your Current Earnings</div>
-                  <div className="text-2xl font-bold text-cyan-400">2,456 NINJA</div>
-                  <div className="text-sm text-gray-400">Rank #47</div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
 
         <div className="text-center">
