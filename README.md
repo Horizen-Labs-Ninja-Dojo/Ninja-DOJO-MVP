@@ -47,13 +47,3 @@ npm install
 npm run dev
 ```
 
-## 🛠️ Available Scripts
-
-| Command            | Description                                      |
-|--------------------|--------------------------------------------------|
-| `npm run dev`      | Runs frontend + backend concurrently             |
-| `npm run build`    | Builds the production frontend using Vite        |
-| `npm run preview`  | Previews the production build                    |
-| `npm run lint`     | Lints the codebase using ESLint                  |
-
----
