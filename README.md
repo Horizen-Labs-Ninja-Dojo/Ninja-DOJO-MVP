@@ -11,6 +11,7 @@ Welcome to **Web3 Ninja**, an ambitious game studio project that fuses AAA-level
 From AI-powered NPCs to DAO-governed villages, we’re building an ecosystem where gameplay, economy, and community merge — and you’re invited to join the dojo.
 
 ---
+![Gameplay Screenshot](./public/image/readme/gameplay.png)
 
 ## 🎯 Vision
 
@@ -47,3 +48,4 @@ npm install
 npm run dev
 ```
 
+---
