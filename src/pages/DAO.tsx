@@ -1,7 +1,35 @@
 import React from 'react';
 import { Vote, Users, Coins, TrendingUp, Calendar, CheckCircle } from 'lucide-react';
 
-
+const proposals = [
+  {
+    id: 1,
+    title: 'New Clan Territory: Cyber Gardens',
+    description: 'Expand the metaverse with a new high-tech garden district featuring advanced stealth mechanics',
+    status: 'Active',
+    votes: { for: 1247, against: 203 },
+    timeLeft: '3 days',
+    type: 'Territory'
+  },
+  {
+    id: 2,
+    title: 'Increase Staking Rewards by 15%',
+    description: 'Boost ninja NFT staking rewards to encourage long-term holding and participation',
+    status: 'Passed',
+    votes: { for: 2156, against: 89 },
+    timeLeft: 'Executed',
+    type: 'Economics'
+  },
+  {
+    id: 3,
+    title: 'AI Companion System',
+    description: 'Introduce AI-powered companion ninjas that learn from player behavior and assist in missions',
+    status: 'Discussion',
+    votes: { for: 0, against: 0 },
+    timeLeft: '7 days',
+    type: 'Feature'
+  }
+];
 
 const stats = [
   { label: 'Total Voters', value: '12,847', icon: Users, color: 'text-cyan-400' },
