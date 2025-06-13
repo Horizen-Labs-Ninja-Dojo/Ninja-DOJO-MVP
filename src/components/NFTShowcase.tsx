@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, TrendingUp, Shield, Zap } from 'lucide-react';
+import { Star, TrendingUp, Shield } from 'lucide-react';
 
 const nftItems = [
   {
@@ -7,7 +7,7 @@ const nftItems = [
     name: 'Shadow Blade Katana',
     rarity: 'Legendary',
     price: '2.5 ETH',
-    image: 'https://images.pexels.com/photos/8534560/pexels-photo-8534560.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '',
     stats: { attack: 95, speed: 88, stealth: 92 },
     rarityColor: 'from-yellow-400 to-orange-500'
   },
@@ -16,7 +16,7 @@ const nftItems = [
     name: 'Cyber Ninja Armor',
     rarity: 'Epic',
     price: '1.8 ETH',
-    image: 'https://images.pexels.com/photos/7654474/pexels-photo-7654474.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '',
     stats: { defense: 90, agility: 75, tech: 85 },
     rarityColor: 'from-purple-400 to-pink-500'
   },
@@ -25,7 +25,7 @@ const nftItems = [
     name: 'Mystic Throwing Stars',
     rarity: 'Rare',
     price: '0.9 ETH',
-    image: 'https://images.pexels.com/photos/8892559/pexels-photo-8892559.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '',
     stats: { accuracy: 93, damage: 78, range: 88 },
     rarityColor: 'from-blue-400 to-cyan-500'
   }
