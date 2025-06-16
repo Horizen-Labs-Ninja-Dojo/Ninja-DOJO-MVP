@@ -1,0 +1,50 @@
+const axios = require('axios')
+const asyncErrorHandler = require('../middlewares/helpers/asyncErrorHandler');
+const Order = require('../models/orderModel');
+const Product = require('../models/productModel');
+const ErrorHandler = require('../utils/errorHandler');
+const sendEmail = require('../utils/sendEmail');
+
+
+// Create New Order
+exports.newOrder = asyncErrorHandler(async (req, res, next) => {
+
+    const {
+        shippingInfo,
+        orderItems,
+        paymentInfo,
+        totalPrice,
+    } = req.body;
+
+    const orderExist = await Order.findOne({ paymentInfo });
+
+    if (orderExist) {
+        return next(new ErrorHandler("Order Already Placed", 400));
+    }
+
+    const order = await Order.create({
+        shippingInfo,
+        orderItems,
+        paymentInfo,
+        totalPrice,
+        paidAt: Date.now(),
+        user: req.user._id,
+    });
+
+    await sendEmail({
+        email: req.user.email,
+        templateId: process.env.SENDGRID_ORDER_TEMPLATEID,
+        data: {
+            name: req.user.name,
+            shippingInfo,
+            orderItems,
+            totalPrice,
+            oid: order._id,
+        }
+    });
+
+    res.status(201).json({
+        success: true,
+        order,
+    });
+});
