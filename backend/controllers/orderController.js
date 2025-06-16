@@ -48,3 +48,18 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
         order,
     });
 });
+
+// Get Single Order Details
+exports.getSingleOrderDetails = asyncErrorHandler(async (req, res, next) => {
+
+    const order = await Order.findById(req.params.id).populate("user", "name email");
+
+    if (!order) {
+        return next(new ErrorHandler("Order Not Found", 404));
+    }
+
+    res.status(200).json({
+        success: true,
+        order,
+    });
+});
