@@ -1,7 +1,7 @@
 const app = require('./app');
 const jsonlogger = require("node-mongodb-logger");
 const cloudinary = require('cloudinary');
-// const PORT = process.env.PORT || 3099;
+const PORT = process.env.PORT || 3099;
 
 // UncaughtException Error
 process.on('uncaughtException', (err) => {
