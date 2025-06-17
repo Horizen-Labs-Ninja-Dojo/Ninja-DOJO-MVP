@@ -78,3 +78,24 @@ exports.myOrders = asyncErrorHandler(async (req, res, next) => {
         orders,
     });
 });
+
+// Get All Orders ---ADMIN
+exports.getAllOrders = asyncErrorHandler(async (req, res, next) => {
+
+    const orders = await Order.find();
+
+    if (!orders) {
+        return next(new ErrorHandler("Order Not Found", 404));
+    }
+
+    let totalAmount = 0;
+    orders.forEach((order) => {
+        totalAmount += order.totalPrice;
+    });
+
+    res.status(200).json({
+        success: true,
+        orders,
+        totalAmount,
+    });
+});
