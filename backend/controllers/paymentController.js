@@ -45,14 +45,11 @@ exports.processPayment = asyncErrorHandler(async (req, res, next) => {
 // Paytm Callback
 exports.paytmResponse = (req, res, next) => {
 
-    // console.log(req.body);
-
     let paytmChecksum = req.body.CHECKSUMHASH;
     delete req.body.CHECKSUMHASH;
 
     let isVerifySignature = paytm.verifySignature(req.body, process.env.PAYTM_MERCHANT_KEY, paytmChecksum);
     if (isVerifySignature) {
-        // console.log("Checksum Matched");
 
         var paytmParams = {};
 
@@ -74,7 +71,6 @@ exports.paytmResponse = (req, res, next) => {
                 /* for Staging */
                 hostname: 'securegw-stage.paytm.in',
                 /* for Production */
-                // hostname: 'securegw.paytm.in',
                 port: 443,
                 path: '/v3/order/status',
                 method: 'POST',
@@ -93,10 +89,7 @@ exports.paytmResponse = (req, res, next) => {
 
                 post_res.on('end', function () {
                     let { body } = JSON.parse(response);
-                    // let status = body.resultInfo.resultStatus;
-                    // res.json(body);
                     addPayment(body);
-                    // res.redirect(`${req.protocol}://${req.get("host")}/order/${body.orderId}`)
                     res.redirect(`https://${req.get("host")}/order/${body.orderId}`)
                 });
             });
