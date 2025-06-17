@@ -48,7 +48,6 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
         order,
     });
     
-    console.log("Success");
 });
 
 // Get Single Order Details
@@ -64,8 +63,6 @@ exports.getSingleOrderDetails = asyncErrorHandler(async (req, res, next) => {
         success: true,
         order,
     });
-    console.log("Success");
-
 });
 
 // Get Logged In User Orders
@@ -81,8 +78,6 @@ exports.myOrders = asyncErrorHandler(async (req, res, next) => {
         success: true,
         orders,
     });
-    console.log("Success");
-
 });
 
 // Get All Orders ---ADMIN
@@ -104,8 +99,6 @@ exports.getAllOrders = asyncErrorHandler(async (req, res, next) => {
         orders,
         totalAmount,
     });
-    console.log("Success");
-
 });
 
 // Update Order Status ---ADMIN
@@ -138,8 +131,6 @@ exports.updateOrder = asyncErrorHandler(async (req, res, next) => {
     res.status(200).json({
         success: true
     });
-    console.log("Success");
-
 });
 
 async function updateStock(id, quantity) {
@@ -162,6 +153,4 @@ exports.deleteOrder = asyncErrorHandler(async (req, res, next) => {
     res.status(200).json({
         success: true,
     });
-    console.log("Success");
-
 });
