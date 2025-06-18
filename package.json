@@ -1,9 +1,9 @@
 {
   "name": "vite-react-typescript-starter",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
-    "dev": "concurrently \"vite\" \"node backend/server.js\"",
+    "dev": "concurrently \"vite\" ",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
