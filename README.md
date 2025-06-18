@@ -1,4 +1,4 @@
-# 🥷 Web3 Ninja: The Future of Ninja Metaverses
+# Web3 Ninja: The Future of Ninja Metaverses
 
 Welcome to **Web3 Ninja**, an ambitious game studio project that fuses AAA-level ninja gameplay with cutting-edge Web3 technology. This monorepo includes both the **frontend (React + Vite + TypeScript)** and **backend (Node.js + Express)** services powering the Web3 Ninja experience.
 
