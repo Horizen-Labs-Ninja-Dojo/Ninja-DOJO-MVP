@@ -24,10 +24,10 @@ export const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <MessageCircle className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://github.com/loopcrewhub" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="mail:hello@theweb3.ninja" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
             </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
           </div>
 
           {/* Community */}
-          <div>
+          {/* <div>
             <h3 className="text-white font-bold mb-4">Community</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Discord</a></li>
@@ -53,7 +53,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Twitter</a></li>
               <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Reddit</a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
