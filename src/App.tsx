@@ -10,7 +10,21 @@ import { Earn } from './pages/Earn';
 import { About } from './pages/About';
 
 function App() {
-
+  return (
+    <Router>
+      <div className="min-h-screen bg-black text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/nfts" element={<NFTs />} />
+          <Route path="/dao" element={<DAO />} />
+          <Route path="/earn" element={<Earn />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
