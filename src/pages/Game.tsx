@@ -52,7 +52,7 @@ export const Game = () => {
             </div>
             <div className="relative animate-ninja-flip">
               <img
-                src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/public/image/game/gameplay.png"
                 alt="Ninja Combat"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
