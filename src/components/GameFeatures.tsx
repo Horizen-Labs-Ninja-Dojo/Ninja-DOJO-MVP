@@ -1,44 +1,7 @@
 import React from 'react';
 import { Sword, Users, Bot, Gamepad2, Trophy, Coins } from 'lucide-react';
 
-const features = [
-  {
-    icon: Gamepad2,
-    title: 'Immersive Gameplay',
-    description: 'PvE & PvP missions, faction wars, stealth mechanics, and skill trees in stunning 3D environments',
-    color: 'from-cyan-400 to-blue-500'
-  },
-  {
-    icon: Sword,
-    title: 'NFT Asset Ownership',
-    description: 'Every sword, skill, land piece, and clan membership is a tradable, upgradable NFT',
-    color: 'from-purple-400 to-pink-500'
-  },
-  {
-    icon: Coins,
-    title: 'Play-to-Earn Economy',
-    description: 'Earn tokens through battles, quests, crafting, and staking your valuable ninja NFTs',
-    color: 'from-yellow-400 to-orange-500'
-  },
-  {
-    icon: Bot,
-    title: 'AI-Enhanced NPCs',
-    description: 'Adaptive enemies and allies powered by machine learning that respond to your playstyle',
-    color: 'from-green-400 to-teal-500'
-  },
-  {
-    icon: Users,
-    title: 'DAO Governance',
-    description: 'Stake tokens, propose features, vote on story arcs, and become a true village leader',
-    color: 'from-indigo-400 to-purple-500'
-  },
-  {
-    icon: Trophy,
-    title: 'Cross-Platform',
-    description: 'Available on web, PC, mobile with seamless wallet integration and future VR expansion',
-    color: 'from-pink-400 to-red-500'
-  }
-];
+
 
 export const GameFeatures = () => {
   return (
