@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.2",
   "scripts": {
-    "dev": "concurrently \"vite\" ",
+    "dev": "concurrently \"vite\" \"node backend/server.js\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

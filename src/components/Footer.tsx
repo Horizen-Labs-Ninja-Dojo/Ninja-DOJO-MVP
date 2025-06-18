@@ -18,7 +18,7 @@ export const Footer = () => {
               The ultimate Web3 ninja metaverse where gameplay meets blockchain. Own, battle, and earn in the most immersive gaming experience ever created.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://x.com/xdemocle" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
