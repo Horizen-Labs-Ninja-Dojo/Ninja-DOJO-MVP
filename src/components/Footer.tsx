@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sword, Twitter, MessageCircle, Github, Mail } from 'lucide-react';
+import { Sword, Twitter, Github, Mail, Linkedin, Globe } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -18,17 +18,20 @@ export const Footer = () => {
               The ultimate Web3 ninja metaverse where gameplay meets blockchain. Own, battle, and earn in the most immersive gaming experience ever created.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="https://x.com/xdemocle" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://x.com/xdemocle" className="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="Twitter">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <MessageCircle className="h-6 w-6" />
+              <a href="https://www.linkedin.com/company/theweb3-ninja" className="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-6 w-6" />
               </a>
-              <a href="https://github.com/loopcrewhub" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <Github className="h-6 w-6" />
+              <a href="https://bsky.app/profile/theweb3.ninja" className="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="Bluesky">
+                <Globe className="h-6 w-6" />
               </a>
-              <a href="mail:hello@theweb3.ninja" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="mailto:hello@theweb3.ninja" className="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="Email">
                 <Mail className="h-6 w-6" />
+              </a>
+              <a href="https://github.com/loopcrewhub" className="text-gray-400 hover:text-cyan-400 transition-colors" aria-label="GitHub">
+                <Github className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -43,17 +46,6 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Roadmap</a></li>
             </ul>
           </div>
-
-          {/* Community */}
-          {/* <div>
-            <h3 className="text-white font-bold mb-4">Community</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Discord</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Telegram</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Twitter</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Reddit</a></li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
