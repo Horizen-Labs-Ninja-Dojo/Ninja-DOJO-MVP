@@ -117,43 +117,7 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-gray-900 animate-team-assemble">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-              Meet the Ninja Masters
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Our world-class team of developers, designers, and technologists are bringing this vision to life.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-team-formation">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className={`group bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-105 overflow-hidden animate-member-intro`}
-                style={{ animationDelay: `${index * 300}ms` }}
-              >
-                <div className="relative">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                  <p className="text-purple-400 font-semibold mb-3">{member.role}</p>
-                  <p className="text-gray-400">{member.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* Roadmap */}
       <section className="py-20 bg-gradient-to-b from-gray-900 to-black animate-roadmap-unfold">
