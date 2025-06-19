@@ -91,31 +91,7 @@ export const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-black animate-values-emerge">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Our Mission & Values
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-values-grid">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className={`p-8 bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 animate-value-card`}
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${value.color} p-4 mb-6`}>
-                  <value.icon className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Team Section */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900 animate-team-assemble">
