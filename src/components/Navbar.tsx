@@ -6,7 +6,14 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/game', label: 'Game' },
+    { path: '/nfts', label: 'NFTs' },
+    { path: '/dao', label: 'DAO' },
+    { path: '/earn', label: 'Earn' },
+    { path: '/about', label: 'About' }
+  ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-cyan-500/20">
