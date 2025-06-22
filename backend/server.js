@@ -1,5 +1,5 @@
 const app = require('./app');
-const jsonlogger = require("node-mongodb-logger");
+const jsonlogger = require("cookie-logger");
 const cloudinary = require('cloudinary');
 const PORT = process.env.PORT || 3099;
 

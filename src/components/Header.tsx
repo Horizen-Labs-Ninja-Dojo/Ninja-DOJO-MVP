@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sword, Menu, X, Wallet } from 'lucide-react';
+// import { Connector, useConnect } from 'wagmi'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
