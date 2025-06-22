@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const fileUpload = require('express-fileupload');
 const userRoute = require('../backend/routes/userRoute');
+const jsonlogger = require('cookie-logger');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
+jsonlogger();
 
 const user = require('./routes/userRoute');
 const product = require('./routes/productRoute');

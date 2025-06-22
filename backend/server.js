@@ -1,5 +1,4 @@
 const app = require('./app');
-const jsonlogger = require("cookie-logger");
 const cloudinary = require('cloudinary');
 const PORT = process.env.PORT || 3099;
 
@@ -17,7 +16,6 @@ cloudinary.config({
 
 const server = app.listen(PORT, () => {
     console.log(`Server running`)
-    jsonlogger();
 });
 
 // Unhandled Promise Rejection
