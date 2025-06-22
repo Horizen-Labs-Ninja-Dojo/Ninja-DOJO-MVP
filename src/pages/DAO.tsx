@@ -58,7 +58,7 @@ export const DAO = () => {
             </div>
             <div className="relative animate-council-chamber">
               <img
-                src="https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/public/image/dao/dao_hero.png"
                 alt="Ninja Council"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -158,7 +158,7 @@ export const DAO = () => {
           </div>
 
           <div className="text-center mt-12 animate-create-proposal-glow">
-            <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-xl font-bold text-lg hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105">
+            <button className="px-8 py-3 w-full bg-gradient-to-r from-cyan-500 to-purple-600 rounded-xl font-bold text-lg hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105">
               Create Proposal
             </button>
           </div>

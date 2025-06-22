@@ -9,7 +9,7 @@ const earningMethods = [
     earning: '50-200 NINJA/day',
     difficulty: 'Easy',
     color: 'from-green-400 to-emerald-500',
-    image: 'https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/public/image/earn/mission_rewards.png'
   },
   {
     icon: Users,
@@ -18,7 +18,7 @@ const earningMethods = [
     earning: '100-500 NINJA/win',
     difficulty: 'Medium',
     color: 'from-cyan-400 to-blue-500',
-    image: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/public/image/earn/pbp_battles.png'
   },
   {
     icon: Trophy,
@@ -68,7 +68,7 @@ export const Earn = () => {
             </div>
             <div className="relative animate-earning-showcase">
               <img
-                src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/public/image/earn/earn.png"
                 alt="Ninja Earning"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />

@@ -3,24 +3,43 @@ import { Target, Users, Zap, Shield, Globe, Code } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Akira Tanaka',
+    name: 'Marcus Rodriguez',
     role: 'Lead Game Designer',
-    image: 'https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/public/image/about/Marcus_Rodriguez.jpg',
     description: 'Former Ubisoft designer with 10+ years in AAA gaming'
   },
   {
     name: 'Sarah Chen',
     role: 'Blockchain Architect',
-    image: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
     description: 'Ex-Ethereum Foundation, Web3 infrastructure expert'
   },
   {
-    name: 'Marcus Rodriguez',
+    name: 'Akira Tanaka',
     role: 'AI/ML Engineer',
-    image: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&w=400',
     description: 'PhD in Machine Learning, former Google DeepMind'
+  },
+  {
+    name: 'Leila Nguyen',
+    role: 'Creative Director',
+    image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'Award-winning visual artist and storyteller with a focus on immersive worlds'
+  },
+  {
+    name: 'Diego Marquez',
+    role: 'Smart Contract Developer',
+    image: 'https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'Solidity expert with DeFi protocol experience and open-source contributor'
+  },
+  {
+    name: 'Isabella Russo',
+    role: 'Community & DAO Strategist',
+    image: 'https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'Former Reddit community lead, specializes in governance and engagement models'
   }
-];
+]
+
 
 const values = [
   {
@@ -80,7 +99,7 @@ export const About = () => {
             </div>
             <div className="relative animate-vision-manifest">
               <img
-                src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/public/image/about/about_ninjadojo.png"
                 alt="Ninja Dojo Vision"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -114,7 +133,7 @@ export const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>  
       </section>
 
       {/* Team Section */}
@@ -151,48 +170,6 @@ export const About = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Roadmap */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-black animate-roadmap-unfold">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Development Roadmap
-            </h2>
-          </div>
-
-          <div className="space-y-8 animate-timeline-draw">
-            <div className="flex items-start space-x-6 animate-milestone-appear">
-              <div className="w-4 h-4 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Q1 2025 - Alpha Launch</h3>
-                <p className="text-gray-400">Core gameplay mechanics, basic NFT integration, and closed alpha testing</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-6 animate-milestone-appear animation-delay-200">
-              <div className="w-4 h-4 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Q2 2025 - Beta Release</h3>
-                <p className="text-gray-400">Full marketplace, DAO governance, and public beta with play-to-earn mechanics</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-6 animate-milestone-appear animation-delay-400">
-              <div className="w-4 h-4 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Q3 2025 - Full Launch</h3>
-                <p className="text-gray-400">Complete game launch with AI NPCs, cross-platform support, and mobile app</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-6 animate-milestone-appear animation-delay-600">
-              <div className="w-4 h-4 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Q4 2025 - VR Expansion</h3>
-                <p className="text-gray-400">Virtual reality support and advanced metaverse features</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
