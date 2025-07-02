@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const connectDB = require('./config/database');
-const validator = require('cors-validator');
 require('dotenv').config();
 // Connect to MongoDB
 connectDB();
@@ -22,7 +21,6 @@ const app = express();
 
 // Security middleware
 app.use(helmet());
-validator();
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:5173',
   credentials: true
