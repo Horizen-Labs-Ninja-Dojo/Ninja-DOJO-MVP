@@ -63,7 +63,7 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-cyan-900/20"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%2300F5FF%22 fill-opacity=%220.05%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
 
-        <div className="container mx-auto px-6 py-20 relative z-10">
+        <div className="container mx-auto px-6 py-20 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-stagger">
             <div className="animate-slide-in-left">
               <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -91,7 +91,7 @@ export const Home = () => {
             </div>
 
             <div className="relative animate-slide-in-right">
-              <div className="relative z-10">
+              <div className="relative">
                 <img
                   src="/image/home/hero_section.png"
                   alt="Cyber Ninja Warrior"
