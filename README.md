@@ -38,7 +38,7 @@ Players will **own, shape, and earn** from the worlds they explore.
 
 ```bash
 # Clone the repo
-git clone https://github.com/loopcrewhub/Web3-Ninja-Dojo.git
+git clone https://github.com/Cyptoninja/Ninja-DOJO-MVP.git
 cd web3-ninja
 
 # Install dependencies
