@@ -27,7 +27,7 @@ const earningMethods = [
     earning: '1000-5000 NINJA',
     difficulty: 'Hard',
     color: 'from-yellow-400 to-orange-500',
-    image: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/public/image/earn/tournament_champions.png'
   },
   {
     icon: Zap,
@@ -36,7 +36,7 @@ const earningMethods = [
     earning: '20-100 NINJA/day',
     difficulty: 'Passive',
     color: 'from-purple-400 to-pink-500',
-    image: 'https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/public/image/earn/nft_staking.png'
   }
 ];
 
@@ -201,7 +201,7 @@ export const Earn = () => {
               </div>
               <div className="relative animate-cta-image">
                 <img
-                  src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="/public/image/earn/start_section.jpeg"
                   alt="Ninja Training"
                   className="w-full h-64 object-cover rounded-xl"
                 />

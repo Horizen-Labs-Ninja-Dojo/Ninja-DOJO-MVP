@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sword, Menu, X, Wallet } from 'lucide-react';
+import { useAppKit, useAppKitAccount } from '@reown/appkit/react';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { address, isConnected } = useAppKitAccount()
+
+  const { open } = useAppKit();
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -31,11 +35,10 @@ export const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`transition-colors ${
-                  location.pathname === item.path
-                    ? 'text-cyan-400'
-                    : 'text-gray-300 hover:text-cyan-400'
-                }`}
+                className={`transition-colors ${location.pathname === item.path
+                  ? 'text-cyan-400'
+                  : 'text-gray-300 hover:text-cyan-400'
+                  }`}
               >
                 {item.label}
               </Link>
@@ -43,13 +46,14 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 flex items-center space-x-2">
+            {!isConnected ? <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 flex items-center space-x-2" onClick={() => open()}>
               <Wallet className="h-4 w-4" />
               <span>Connect Wallet</span>
-            </button>
+            </button> :
+              <appkit-button />}
           </div>
 
-          <button 
+          <button
             className="md:hidden text-gray-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -64,11 +68,10 @@ export const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`transition-colors ${
-                    location.pathname === item.path
-                      ? 'text-cyan-400'
-                      : 'text-gray-300 hover:text-cyan-400'
-                  }`}
+                  className={`transition-colors ${location.pathname === item.path
+                    ? 'text-cyan-400'
+                    : 'text-gray-300 hover:text-cyan-400'
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}

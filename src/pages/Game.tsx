@@ -110,7 +110,7 @@ export const Game = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-formation-deploy">
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal">
               <img
-                src="https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/public/image/game/pve_missions.png"
                 alt="PvE Missions"
                 className="w-full h-48 object-cover"
               />
@@ -122,7 +122,7 @@ export const Game = () => {
 
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal animation-delay-200">
               <img
-                src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/public/image/game/pbp_battles.png"
                 alt="PvP Battles"
                 className="w-full h-48 object-cover"
               />
@@ -134,7 +134,7 @@ export const Game = () => {
 
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal animation-delay-400">
               <img
-                src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/public/image/game/clan_wars.jpeg"
                 alt="Clan Wars"
                 className="w-full h-48 object-cover"
               />

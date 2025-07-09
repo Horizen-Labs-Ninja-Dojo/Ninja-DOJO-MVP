@@ -15,9 +15,9 @@ const teamMembers = [
     description: 'Ex-Ethereum Foundation, Web3 infrastructure expert'
   },
   {
-    name: 'Akira Tanaka',
+    name: 'Mike Starr',
     role: 'AI/ML Engineer',
-    image: 'https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/public/image/about/Mike_Starr.jpg',
     description: 'PhD in Machine Learning, former Google DeepMind'
   },
   {
@@ -99,7 +99,7 @@ export const About = () => {
             </div>
             <div className="relative animate-vision-manifest">
               <img
-                src="/public/image/about/about_ninjadojo.png"
+                src="/public/image/about/about.png"
                 alt="Ninja Dojo Vision"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
