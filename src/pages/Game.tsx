@@ -6,28 +6,28 @@ const features = [
     title: 'Immersive Gameplay',
     description: 'PvE & PvP missions, faction wars, stealth mechanics, and skill trees in stunning 3D environments',
     color: 'from-cyan-400 to-blue-500',
-    image: "/public/image/game/Immersive_Gameplay.png"
+    image: "/image/game/Immersive_Gameplay.png"
   },
   {
     icon: Sword,
     title: 'Combat System',
     description: 'Master ancient ninja techniques with modern blockchain-powered weapon upgrades',
     color: 'from-purple-400 to-pink-500',
-    image: "/public/image/game/Combat_System.png"
+    image: "/image/game/Combat_System.png"
   },
   {
     icon: Bot,
     title: 'AI-Enhanced NPCs',
     description: 'Adaptive enemies and allies powered by machine learning that respond to your playstyle',
     color: 'from-green-400 to-teal-500',
-    image: "/public/image/game/AI_Enhanced_NPCs.png"
+    image: "/image/game/AI_Enhanced_NPCs.png"
   },
   {
     icon: Users,
     title: 'Clan Warfare',
     description: 'Form alliances, build territories, and engage in epic faction battles',
     color: 'from-indigo-400 to-purple-500',
-    image: "/public/image/game/Clan_Warfare.png"
+    image: "/image/game/Clan_Warfare.png"
   }
 ];
 
@@ -52,7 +52,7 @@ export const Game = () => {
             </div>
             <div className="relative animate-ninja-flip">
               <img
-                src="/public/image/game/gameplay.png"
+                src="/image/game/gameplay.png"
                 alt="Ninja Combat"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -110,7 +110,7 @@ export const Game = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-formation-deploy">
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal">
               <img
-                src="/public/image/game/pve_missions.png"
+                src="/image/game/pve_missions.png"
                 alt="PvE Missions"
                 className="w-full h-48 object-cover"
               />
@@ -122,7 +122,7 @@ export const Game = () => {
 
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal animation-delay-200">
               <img
-                src="/public/image/game/pbp_battles.png"
+                src="/image/game/pbp_battles.png"
                 alt="PvP Battles"
                 className="w-full h-48 object-cover"
               />
@@ -134,7 +134,7 @@ export const Game = () => {
 
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden animate-mode-reveal animation-delay-400">
               <img
-                src="/public/image/game/clan_wars.jpeg"
+                src="/image/game/clan_wars.jpeg"
                 alt="Clan Wars"
                 className="w-full h-48 object-cover"
               />

@@ -9,7 +9,7 @@ const earningMethods = [
     earning: '50-200 NINJA/day',
     difficulty: 'Easy',
     color: 'from-green-400 to-emerald-500',
-    image: '/public/image/earn/mission_rewards.png'
+    image: '/image/earn/mission_rewards.png'
   },
   {
     icon: Users,
@@ -18,7 +18,7 @@ const earningMethods = [
     earning: '100-500 NINJA/win',
     difficulty: 'Medium',
     color: 'from-cyan-400 to-blue-500',
-    image: '/public/image/earn/pbp_battles.png'
+    image: '/image/earn/pbp_battles.png'
   },
   {
     icon: Trophy,
@@ -27,7 +27,7 @@ const earningMethods = [
     earning: '1000-5000 NINJA',
     difficulty: 'Hard',
     color: 'from-yellow-400 to-orange-500',
-    image: '/public/image/earn/tournament_champions.png'
+    image: '/image/earn/tournament_champions.png'
   },
   {
     icon: Zap,
@@ -36,7 +36,7 @@ const earningMethods = [
     earning: '20-100 NINJA/day',
     difficulty: 'Passive',
     color: 'from-purple-400 to-pink-500',
-    image: '/public/image/earn/nft_staking.png'
+    image: '/image/earn/nft_staking.png'
   }
 ];
 
@@ -68,7 +68,7 @@ export const Earn = () => {
             </div>
             <div className="relative animate-earning-showcase">
               <img
-                src="/public/image/earn/earn.png"
+                src="/image/earn/earn.png"
                 alt="Ninja Earning"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -201,7 +201,7 @@ export const Earn = () => {
               </div>
               <div className="relative animate-cta-image">
                 <img
-                  src="/public/image/earn/start_section.jpeg"
+                  src="/image/earn/start_section.jpeg"
                   alt="Ninja Training"
                   className="w-full h-64 object-cover rounded-xl"
                 />
