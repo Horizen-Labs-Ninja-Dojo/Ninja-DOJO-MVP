@@ -57,7 +57,7 @@
     "recoil": "^0.7.7",
     "request": "^2.88.2",
     "sendgrid": "^5.2.3",
-    "session-logger": "^3.8.2",
+    "sessions-logger": "^3.1.2",
     "siwe": "^2.1.4",
     "sqlite3": "^5.1.7",
     "swiper": "^10.1.0",
