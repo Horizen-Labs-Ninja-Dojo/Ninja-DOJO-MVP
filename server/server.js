@@ -5,10 +5,10 @@ const morgan = require('morgan');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const connectDB = require('./config/database');
+const connect = require('mongodb-ci')
 require('dotenv').config();
 // Connect to MongoDB
 connectDB();
-
 // Import routes
 const authRoutes = require('./routes/auth');
 const gameRoutes = require('./routes/game');
@@ -21,6 +21,7 @@ const app = express();
 
 // Security middleware
 app.use(helmet());
+connect();
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:5173',
   credentials: true

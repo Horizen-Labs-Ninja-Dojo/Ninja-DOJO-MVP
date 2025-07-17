@@ -7,7 +7,7 @@ const nftItems = [
     name: 'Shadow Blade Katana',
     rarity: 'Legendary',
     price: '2.5 ETH',
-    image: '/image/nfts/Shadow_Blade_Katana.png',
+    image: '/images/nfts/Shadow_Blade_Katana.webp',
     stats: { attack: 95, speed: 88, stealth: 92 },
     rarityColor: 'from-yellow-400 to-orange-500'
   },
@@ -16,7 +16,7 @@ const nftItems = [
     name: 'Cyber Ninja Armor',
     rarity: 'Epic',
     price: '1.8 ETH',
-    image: '/image/nfts/Cyber_Ninja_Armor_image.png',
+    image: '/images/nfts/Cyber_Ninja_Armor_image.webp',
     stats: { defense: 90, agility: 75, tech: 85 },
     rarityColor: 'from-purple-400 to-pink-500'
   },
@@ -25,7 +25,7 @@ const nftItems = [
     name: 'Mystic Throwing Stars',
     rarity: 'Rare',
     price: '0.9 ETH',
-    image: '/image/nfts/Mystic_Throwing_Stars.png',
+    image: '/images/nfts/Mystic_Throwing_Stars.webp',
     stats: { accuracy: 93, damage: 78, range: 88 },
     rarityColor: 'from-blue-400 to-cyan-500'
   },
@@ -34,7 +34,7 @@ const nftItems = [
     name: 'Dragon Scale Mask',
     rarity: 'Epic',
     price: '1.2 ETH',
-    image: '/image/nfts/Dragon_scale_mask.png',
+    image: '/images/nfts/Dragon_scale_mask.webp',
     stats: { stealth: 88, vision: 92, intimidation: 85 },
     rarityColor: 'from-purple-400 to-pink-500'
   },
@@ -43,7 +43,7 @@ const nftItems = [
     name: 'Lightning Gauntlets',
     rarity: 'Rare',
     price: '0.7 ETH',
-    image: '/image/nfts/Lightning_Gauntlets.png',
+    image: '/images/nfts/Lightning_Gauntlets.webp',
     stats: { speed: 90, electric: 85, grip: 88 },
     rarityColor: 'from-blue-400 to-cyan-500'
   },
@@ -52,7 +52,7 @@ const nftItems = [
     name: 'Phantom Cloak',
     rarity: 'Legendary',
     price: '3.1 ETH',
-    image: '/image/nfts/Phantom_Cloak.png',
+    image: '/images/earn/nft_staking.webp',
     stats: { stealth: 98, mobility: 90, defense: 85 },
     rarityColor: 'from-yellow-400 to-orange-500'
   }
@@ -201,7 +201,7 @@ export const NFTs = () => {
             </div>
             <div className="relative animate-artifact-showcase">
               <img
-                src="/image/nfts/legendary_ninja_Artifacts.png"
+                src="/images/nfts/legendary_ninja_Artifacts.webp"
                 alt="Ancient Ninja Artifacts"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />

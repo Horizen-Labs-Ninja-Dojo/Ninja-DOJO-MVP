@@ -93,7 +93,7 @@ export const Home = () => {
             <div className="relative animate-slide-in-right">
               <div className="relative">
                 <img
-                  src="/image/home/hero_section.png"
+                  src="/public/images/home/hero_section.webp"
                   alt="Cyber Ninja Warrior"
                   className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 />

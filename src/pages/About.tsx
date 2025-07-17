@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'Marcus Rodriguez',
     role: 'Lead Game Designer',
-    image: '/image/about/Marcus_Rodriguez.jpg',
+    image: '/images/about/Marcus_Rodriguez.webp',
     description: 'Former Ubisoft designer with 10+ years in AAA gaming'
   },
   {
@@ -17,7 +17,7 @@ const teamMembers = [
   {
     name: 'Mike Starr',
     role: 'AI/ML Engineer',
-    image: '/image/about/Mike_Starr.jpg',
+    image: '/images/about/Mike_Starr.webp',
     description: 'PhD in Machine Learning, former Google DeepMind'
   },
   {
@@ -99,7 +99,7 @@ export const About = () => {
             </div>
             <div className="relative animate-vision-manifest">
               <img
-                src="/image/about/about.png"
+                src="/images/about/about.webp"
                 alt="Ninja Dojo Vision"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />

@@ -58,7 +58,7 @@ export const DAO = () => {
             </div>
             <div className="relative animate-council-chamber">
               <img
-                src="/image/dao/dao_hero.png"
+                src="/images/dao/dao_hero.webp"
                 alt="Ninja Council"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
