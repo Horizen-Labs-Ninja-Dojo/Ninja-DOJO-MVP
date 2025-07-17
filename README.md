@@ -11,7 +11,7 @@ Welcome to **Web3 Ninja**, an ambitious game studio project that fuses AAA-level
 From AI-powered NPCs to DAO-governed villages, we’re building an ecosystem where gameplay, economy, and community merge — and you’re invited to join the dojo.
 
 ---
-![Gameplay Screenshot](./public/image/readme/gameplay.png)
+![Gameplay Screenshot](./public/images/readme/gameplay.png)
 
 ## 🎯 Vision
 
@@ -38,8 +38,8 @@ Players will **own, shape, and earn** from the worlds they explore.
 
 ```bash
 # Clone the repo
-git clone https://github.com/Cyptoninja/Ninja-DOJO-MVP.git
-cd web3-ninja
+git clone https://github.com/Horizen-Labs-Web3-Ninja-Metaverse/Ninja-DOJO-MVP.git
+cd Ninja-DOJO-MVP
 
 # Install dependencies
 npm install
